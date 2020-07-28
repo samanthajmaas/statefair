@@ -15,7 +15,6 @@ export const TicketBooth = () => {
 
 eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id ==="rideTicket"){
-
         const rideEvent = new CustomEvent("rideTicketPurchased")
         eventHub.dispatchEvent(rideEvent)
     }
